@@ -1,3 +1,6 @@
+#ifndef ARDUBOY2EX_H
+#define ARDUBOY2EX_H
+
 // Class derived from Arduboy2 to replace write() and drawChar() functions
 // to add "invert" color support.
 
@@ -65,4 +68,6 @@ class Arduboy2Ex : public Arduboy2
  protected:
   static void drawTextPixel(int16_t x, int16_t y, uint8_t color);
 };
+
+#endif
 
